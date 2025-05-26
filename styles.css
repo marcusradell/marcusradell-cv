@@ -30,12 +30,6 @@ header {
     align-items: center;
 }
 
-/* Style for the bullet points in the header */
-h2 .bullet {
-    color: #ff8c33;
-    font-weight: bold;
-    margin: 0 5px;
-}
 
 .profile-info h1 {
     font-size: 2.5rem;
@@ -46,15 +40,22 @@ h2 .bullet {
     font-size: 1.3rem;
     font-weight: 400;
     margin-bottom: 10px;
-    line-height: 1.8;
-    letter-spacing: 0.5px;
 }
 
-.profile-info h2 {
+.expertise-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 8px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 12px;
+}
+
+.expertise-list li {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.95rem;
 }
 
 .location {
