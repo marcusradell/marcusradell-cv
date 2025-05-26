@@ -87,6 +87,17 @@ section h2 {
     border-bottom: 1px solid #444;
 }
 
+/* About section */
+.achievements {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.achievements li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
 /* Experience section */
 .job {
     margin-bottom: 25px;
