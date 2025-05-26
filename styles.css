@@ -98,9 +98,22 @@ section h2 {
     position: relative;
 }
 
+.approach {
+    margin-top: 20px;
+    font-style: italic;
+    border-left: 3px solid #ff6b00;
+    padding-left: 15px;
+}
+
 /* Experience section */
 .job {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+    border-bottom: 1px dotted #444;
+    padding-bottom: 30px;
+}
+
+.job:last-child {
+    border-bottom: none;
 }
 
 .job h3 {
@@ -113,11 +126,16 @@ section h2 {
     font-weight: bold;
     margin-bottom: 5px;
     color: #ff6b00;
+    font-size: 1.1rem;
 }
 
 .period {
     color: #aaa;
     font-style: italic;
+    margin-bottom: 15px;
+}
+
+.job p {
     margin-bottom: 10px;
 }
 
@@ -149,10 +167,21 @@ section h2 {
 }
 
 .institution {
+    color: #ff6b00;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.education-item .period {
     color: #aaa;
+    font-style: italic;
 }
 
 /* Contact section */
+#contact p {
+    margin-bottom: 10px;
+}
+
 #contact a {
     color: #ff6b00;
     text-decoration: none;
