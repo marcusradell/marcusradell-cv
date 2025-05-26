@@ -139,6 +139,21 @@ section h2 {
     margin-bottom: 10px;
 }
 
+.job-details {
+    margin: 10px 0 10px 20px;
+}
+
+.job-details li {
+    margin-bottom: 5px;
+}
+
+.company-location {
+    color: #aaa;
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
 /* Skills section */
 .skills-container {
     display: flex;
