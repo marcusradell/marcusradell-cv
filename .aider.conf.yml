@@ -1,3 +1,5 @@
 read:
   - conventions.md
 model: anthropic/claude-sonnet-4-20250514
+auto-commits: false
+dark-mode: true
