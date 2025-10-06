@@ -6,23 +6,24 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Georgia', 'Times New Roman', serif;
     line-height: 1.6;
-    color: #e0e0e0;
-    background-color: #1a1a1a;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 /* Header styles */
 header {
-    background: linear-gradient(135deg, #ff6b00, #ff8f33, #ff4500);
-    color: #1a1a1a;
-    padding: 40px 0;
+    background: #000000;
+    color: #ffffff;
+    padding: 50px 0 40px 0;
+    border-bottom: 4px solid #000000;
 }
 
 .profile-header {
@@ -30,16 +31,18 @@ header {
     align-items: center;
 }
 
-
 .profile-info h1 {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 .profile-info h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .expertise-list {
@@ -48,18 +51,17 @@ header {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    gap: 12px;
+    gap: 10px;
 }
 
 .expertise-list li {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 5px 12px;
-    border-radius: 4px;
-    font-size: 0.95rem;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 6px 14px;
+    border-radius: 0;
+    font-size: 0.9rem;
     font-weight: 500;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff;
 }
 
 .location {
@@ -73,43 +75,51 @@ main {
 }
 
 section {
-    margin-bottom: 40px;
-    background-color: #2a2a2a;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    page-break-inside: avoid;
 }
 
 section h2 {
-    color: #ff6b00;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #444;
+    color: #000000;
+    margin-bottom: 25px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #000000;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 /* About section */
 .achievements {
     margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .achievements li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     position: relative;
+    line-height: 1.7;
 }
 
 .approach {
     margin-top: 20px;
     font-style: italic;
-    border-left: 3px solid #ff6b00;
-    padding-left: 15px;
+    border-left: 3px solid #000000;
+    padding-left: 20px;
+    color: #333333;
 }
 
 /* Experience section */
 .job {
-    margin-bottom: 40px;
-    border-bottom: 1px dotted #444;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #cccccc;
     padding-bottom: 30px;
+    page-break-inside: avoid;
 }
 
 .job:last-child {
@@ -119,36 +129,41 @@ section h2 {
 .job h3 {
     font-size: 1.3rem;
     margin-bottom: 5px;
-    color: #fff;
+    color: #000000;
+    font-weight: 700;
 }
 
 .company {
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 5px;
-    color: #ff6b00;
+    color: #000000;
     font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .period {
-    color: #aaa;
+    color: #666666;
     font-style: italic;
     margin-bottom: 15px;
+    font-size: 0.95rem;
 }
 
 .job p {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    line-height: 1.7;
 }
 
 .job-details {
-    margin: 10px 0 10px 20px;
+    margin: 10px 0 10px 25px;
 }
 
 .job-details li {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    line-height: 1.7;
 }
 
 .company-location {
-    color: #aaa;
+    color: #666666;
     font-style: italic;
     margin-bottom: 10px;
     font-size: 0.9rem;
@@ -158,16 +173,18 @@ section h2 {
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
 }
 
 .skill {
-    background-color: #3a3a3a;
-    color: #ff6b00;
-    padding: 8px 15px;
-    border-radius: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 0;
     font-size: 0.9rem;
-    border: 1px solid #ff6b00;
+    border: 1px solid #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
 }
 
 /* Education section */
@@ -178,45 +195,123 @@ section h2 {
 .education-item h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
-    color: #fff;
+    color: #000000;
+    font-weight: 700;
 }
 
 .institution {
-    color: #ff6b00;
-    font-weight: bold;
+    color: #000000;
+    font-weight: 600;
     margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .education-item .period {
-    color: #aaa;
+    color: #666666;
     font-style: italic;
 }
 
 /* Contact section */
 #contact p {
     margin-bottom: 10px;
+    line-height: 1.7;
 }
 
 #contact a {
-    color: #ff6b00;
-    text-decoration: none;
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 #contact a:hover {
-    text-decoration: underline;
-    color: #ff8c33;
+    text-decoration: none;
 }
 
 /* Footer styles */
 footer {
-    background-color: #111;
-    color: #aaa;
-    padding: 20px 0;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px 0;
     text-align: center;
+    border-top: 4px solid #000000;
+}
+
+/* Print styles */
+@media print {
+    body {
+        font-size: 11pt;
+        line-height: 1.5;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    header {
+        background: #000000;
+        color: #ffffff;
+        padding: 30px 0 20px 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    section {
+        margin-bottom: 30px;
+        page-break-inside: avoid;
+    }
+    
+    section h2 {
+        font-size: 14pt;
+        margin-bottom: 15px;
+        page-break-after: avoid;
+    }
+    
+    .job {
+        page-break-inside: avoid;
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .job h3 {
+        font-size: 12pt;
+        page-break-after: avoid;
+    }
+    
+    .skill {
+        background-color: #000000;
+        color: #ffffff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    .expertise-list li {
+        background-color: #ffffff;
+        color: #000000;
+        border: 1px solid #000000;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    footer {
+        background-color: #000000;
+        color: #ffffff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    a {
+        color: #000000;
+        text-decoration: underline;
+    }
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
     .profile-header {
         flex-direction: column;
         text-align: center;
@@ -224,5 +319,13 @@ footer {
     
     .profile-info {
         margin-top: 20px;
+    }
+    
+    .profile-info h1 {
+        font-size: 2.2rem;
+    }
+    
+    section h2 {
+        font-size: 1.4rem;
     }
 }
