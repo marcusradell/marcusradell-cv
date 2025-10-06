@@ -1,5 +1,5 @@
 read:
   - conventions.md
-model: anthropic/claude-sonnet-4.5-20250514
+model: anthropic/claude-sonnet-4-5-20250929
 auto-commits: false
 dark-mode: true
