@@ -13,14 +13,9 @@
     <div class="container">
       <div class="profile-header">
         <div class="profile-info">
-          <h1>Marcus Rådell</h1>
+          <h1 id="profile-name"></h1>
           <div>
-            <ul class="expertise-list">
-              <li>Engineering Leader</li>
-              <li>15+ Years Fullstack Development</li>
-              <li>Technical Team Coaching</li>
-              <li>Software Architect</li>
-            </ul>
+            <ul class="expertise-list" id="expertise-list"></ul>
           </div>
         </div>
       </div>
@@ -30,258 +25,39 @@
   <main class="container">
     <section id="about">
       <h2>About</h2>
-      <p>Tech leader with a passion for building performing, joyful engineering teams and scalable web solutions. With
-        extensive experience across full-stack development and engineering leadership, I've successfully:</p>
-      <ul class="achievements">
-        <li>
-          Built engineering teams from the ground up, establishing effective processes and cultivating collaborative
-          culture.
-        </li>
-        <li>
-          Led technical education programs that transformed junior developers into industry-ready professionals.
-        </li>
-        <li>
-          Architected and developed mission-critical systems that drive business value.
-        </li>
-        <li>
-          Coached technical leaders and engineers to reach their full potential.
-        </li>
-      </ul>
-      <p class="approach">My approach combines hands-on technical expertise with people-focused leadership. I believe
-        the best technology
-        solutions emerge when teams are empowered, supported, and aligned around clear objectives.</p>
+      <p id="about-summary"></p>
+      <ul class="achievements" id="achievements-list"></ul>
+      <p class="approach" id="about-approach"></p>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
-      <div class="skills-container">
-        <div class="skill">Technical Project Leadership</div>
-        <div class="skill">Project Management</div>
-        <div class="skill">Director level</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">TypeScript</div>
-        <div class="skill">React</div>
-        <div class="skill">Node.js</div>
-        <div class="skill">Flutter</div>
-        <div class="skill">Rust</div>
-        <div class="skill">C#</div>
-        <div class="skill">Java</div>
-        <div class="skill">Team Leadership</div>
-        <div class="skill">Technical Coaching</div>
-        <div class="skill">Agile Methodologies</div>
-        <div class="skill">Test-Driven Development</div>
-        <div class="skill">Pair Programming</div>
-        <div class="skill">Mob Programming</div>
-      </div>
+      <div class="skills-container" id="skills-container"></div>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
-
-      <div class="job">
-        <h3>Head of Teaching</h3>
-        <div class="company">School of Applied Technology &lt;/salt&gt;</div>
-        <div class="period">April 2023 - April 2025 (2 years 1 month)</div>
-        <p>Led and developed a team of instructors delivering fullstack web development education in
-          JavaScript/TypeScript, C#, and Java, simultaneously increasing program quality while optimizing team structure
-          for improved profitability.</p>
-        <p>Designed and implemented multiple mission-critical internal systems, including Salt's talent management
-          application, digital ID verification system, and certification management tools.</p>
-        <p>Served as head instructor for the full-stack JavaScript/TypeScript curriculum, demonstrating technical
-          expertise and educational leadership.</p>
-        <p>Fostered cross-functional collaboration between education, sales, and marketing teams through strategic
-          communication with Salt's board, creating alignment on organizational goals.</p>
-        <p>Mentored 50-90 developers annually through personalized coaching sessions, providing guidance on agile
-          methodologies and technical problem-solving that enhanced career readiness.</p>
-      </div>
-
-      <div class="job">
-        <h3>Director of Engineering</h3>
-        <div class="company">WP Tech AB</div>
-        <div class="period">October 2022 - April 2023 (7 months)</div>
-        <p>Built an engineering organization from the ground up, establishing hiring practices, technical assessment
-          criteria, and onboarding that resulted in a high-performing team.</p>
-        <p>Architected the company's technical foundation by evaluating, selecting, and implementing a simple and
-          efficient technology stack aligned with business objectives.</p>
-        <p>Developed project planning and agile methodologies that streamlined development processes and improved
-          delivery predictability.</p>
-        <p>Provided strategic technical coaching to C-level executives and hands-on mentorship to engineering team
-          members, elevating technical decision-making in the organization.</p>
-        <p>Maintained technical expertise through direct code contributions in critical system components while
-          on-boarding developers through pair programming.</p>
-      </div>
-
-      <div class="job">
-        <h3>Director of Engineering</h3>
-        <div class="company">Deversify</div>
-        <div class="period">October 2021 - April 2023 (1 year 7 months)</div>
-        <p>Led the strategic overhaul of Acetrack v1's technical architecture, implementing systematic debt reduction
-          while maintaining product stability for existing users.</p>
-        <p>Onboarded a cross-functional development team to architect Acetrack v2, leveraging Flutter for mobile
-          development and Rust for stable backend systems.</p>
-        <p>Established comprehensive project governance through detailed road-mapping and user story mapping
-          methodologies, enabling clear prioritization and alignment with business objectives.</p>
-        <p>Championed engineering excellence by implementing test-driven development (TDD) and pair programming
-          practices, ensuring consistent sensor data capture between legacy and new systems.</p>
-        <p>Collaborated across departments by assisting the marketing team in launching the company's web site.</p>
-      </div>
-
-      <div class="job">
-        <h3>Director Of Engineering</h3>
-        <div class="company">GetGeek</div>
-        <div class="period">July 2021 - September 2021 (3 months)</div>
-        <p>Worked independently to plan and execute responsive development, sharing detailed daily logs with the CEO.
-        </p>
-        <p>Made GetGeek's code and infrastructure future-proof and scalable through systematic improvements:</p>
-        <ul class="job-details">
-          <li>Upgraded dependencies, including Node.js from v10 to v14, with careful regression testing</li>
-          <li>Added TypeScript to React Native and backend repositories while maintaining legacy code compatibility</li>
-          <li>Implemented unit testing for new code with business logic separated from React and Express APIs</li>
-          <li>Updated documentation for running and managing services and applications</li>
-          <li>Introduced feature flags for internal testing in production</li>
-          <li>Implemented reliable time tracking for technicians that worked even during client crashes</li>
-          <li>Collaborated with technicians and support to resolve urgent bugs</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <h3>Director Of Engineering</h3>
-        <div class="company">Vembla</div>
-        <div class="period">April 2021 - July 2021 (4 months)</div>
-        <div class="company-location">Stockholm, Stockholm County, Sweden</div>
-        <p>Worked closely with the CTO to ensure that our platform kept up and running while replacing the
-          first-generation of outsourced code to be converted to high quality code.</p>
-      </div>
-
-      <div class="job">
-        <h3>Fullstack Engineering Manager</h3>
-        <div class="company">Svea Solar</div>
-        <div class="period">January 2020 - April 2021 (1 year 4 months)</div>
-        <div class="company-location">Stockholm, Stockholm County, Sweden</div>
-        <p>Worked with the frontend team to teach them how to refactor React components to avoid bugs. Led the
-          backend-for-frontend team that integrated with different backends. Developed our own mini-framework that
-          allowed multiple teams to develop their features faster and with less bugs. Taught mob programming to multiple
-          teams.</p>
-      </div>
-
-      <div class="job">
-        <h3>Chief Technology Officer</h3>
-        <div class="company">WeTal</div>
-        <div class="period">October 2019 - December 2019 (3 months)</div>
-        <div class="company-location">Stockholm, Sweden</div>
-        <p>Improved web site performance and stability. Helped open up the platform and onboard developers.</p>
-      </div>
-
-      <div class="job">
-        <h3>Programmer</h3>
-        <div class="company">Karma</div>
-        <div class="period">September 2017 - October 2019 (2 years 2 months)</div>
-        <div class="company-location">Stockholm, Sweden</div>
-        <p>Fullstack development.</p>
-      </div>
-
-      <div class="job">
-        <h3>Frontend developer</h3>
-        <div class="company">Linas Matkasse</div>
-        <div class="period">November 2016 - August 2017 (10 months)</div>
-        <div class="company-location">Stockholm, Sweden</div>
-        <p>Worked with JavaScript and React, developing my-pages and the next generation back office "Composer".</p>
-      </div>
-
-      <div class="job">
-        <h3>Web Application Developer</h3>
-        <div class="company">Omnivy @ Dinbox</div>
-        <div class="period">June 2016 - November 2016 (6 months)</div>
-        <p>Developed web applications with React, WebSockets, and RxJS for a containerized cloud application managing
-          building data and real-time communication with users and IoT products.</p>
-        <p>The frontend utilized RxJS with redux-style reducers and redux-observable style side-effects, with components
-          combined by merging streams upwards.</p>
-        <p>The developer experience relied on docker-compose for single command execution, docker cloud with CI and CD,
-          and TypeScript for type inference.</p>
-      </div>
-
-      <div class="job">
-        <h3>Developer</h3>
-        <div class="company">Qvalia</div>
-        <div class="period">May 2015 - May 2016 (1 year 1 month)</div>
-        <p>Developed Qvalia's web service platform with JavaScript, focusing on Node.js backend APIs and React frontend
-          (with some legacy AngularJS).</p>
-        <p>Worked with technologies including AWS, PostgreSQL, RxJS, TDD, ES6/2015 via Babel and Webpack, using GitHub
-          feature branches with pair programming and code reviews.</p>
-      </div>
-
-      <div class="job">
-        <h3>IT Consultant</h3>
-        <div class="company">Utvecklarbolaget</div>
-        <div class="period">August 2014 - May 2015 (10 months)</div>
-        <div class="company-location">Östersund/Stockholm</div>
-        <p>Consultancy with focus on AngularJS and modern frontend development with fewer bugs and faster feedback using
-          Browserify to modularize code, enable live reload, and writing frontend components (Angular directives). These
-          concepts were rare at the time.</p>
-      </div>
-
-      <div class="job">
-        <h3>IT Consultant</h3>
-        <div class="company">R2M</div>
-        <div class="period">August 2013 - June 2014 (11 months)</div>
-        <div class="company-location">Kista</div>
-        <p>Web development.</p>
-      </div>
-
-      <div class="job">
-        <h3>IT Consultant</h3>
-        <div class="company">DQ Consulting AB</div>
-        <div class="period">March 2011 - August 2013 (2 years 6 months)</div>
-        <p>Web development.</p>
-      </div>
-
-      <div class="job">
-        <h3>IT Consultant</h3>
-        <div class="company">IPTOR</div>
-        <div class="period">2010 - 2011 (1 year)</div>
-        <p>Web development.</p>
-      </div>
-
-      <div class="job">
-        <h3>IT Consultant</h3>
-        <div class="company">CAG Mälardalen</div>
-        <div class="period">2008 - 2008 (less than a year)</div>
-        <p>Web development.</p>
-      </div>
-
-      <div class="job">
-        <h3>Company Host</h3>
-        <div class="company">Mälardalen University</div>
-        <div class="period">2004 - 2005 (1 year)</div>
-      </div>
+      <div id="experience-list"></div>
     </section>
-
 
     <section id="education">
       <h2>Education</h2>
-      <div class="education-item">
-        <h3>Master, Computer Science</h3>
-        <div class="institution">MDH Västerås</div>
-        <div class="period">2004 - 2010</div>
-      </div>
+      <div id="education-list"></div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Location: Stockholm, Sweden</p>
-      <p>Email: <a href="mailto:marcus@radell.net">marcus@radell.net</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/marcusradell"
-          target="_blank">www.linkedin.com/in/marcusradell</a></p>
-      <p>GitHub: <a href="https://github.com/marcusradell" target="_blank">github.com/marcusradell</a></p>
+      <div id="contact-info"></div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Marcus Rådell</p>
+      <p id="footer-text"></p>
     </div>
   </footer>
 
+  <script type="module" src="main.js"></script>
 </body>
 
 </html>
