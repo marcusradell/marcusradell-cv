@@ -1,4 +1,10 @@
 import data from './data.js';
+import { developerExperienceDescriptions } from './developer-experience-descriptions.js';
+
+const experienceWithDescriptions = data.experience.map(job => ({
+  ...job,
+  description: developerExperienceDescriptions[job.id]
+}));
 
 document.getElementById('profile-name').textContent = data.profile.name;
 
@@ -29,7 +35,7 @@ data.skills.forEach(skill => {
 });
 
 const experienceList = document.getElementById('experience-list');
-data.experience.forEach(job => {
+experienceWithDescriptions.forEach(job => {
   const jobDiv = document.createElement('div');
   jobDiv.className = 'job';
 
