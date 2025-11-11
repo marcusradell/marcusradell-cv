@@ -24,7 +24,9 @@ export function Skills() {
       <h2>Skills</h2>
       <div className="skills-container" id="skills-container">
         {skills.map((skill) => (
-          <div className="skill">{skill}</div>
+          <div key={skill} className="skill">
+            {skill}
+          </div>
         ))}
       </div>
     </section>

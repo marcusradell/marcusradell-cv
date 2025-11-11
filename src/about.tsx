@@ -18,7 +18,7 @@ export function About() {
       <p id="about-summary">{data.summary}</p>
       <ul className="achievements" id="achievements-list">
         {data.achievements.map((achievement) => (
-          <li>{achievement}</li>
+          <li key={achievement}>{achievement}</li>
         ))}
       </ul>
       <p className="approach" id="about-approach">
