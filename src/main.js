@@ -6,17 +6,6 @@ const experienceWithDescriptions = data.experience.map((job) => ({
   description: developerExperienceDescriptions[job.id],
 }));
 
-document.getElementById("about-summary").textContent = data.about.summary;
-
-const achievementsList = document.getElementById("achievements-list");
-data.about.achievements.forEach((achievement) => {
-  const li = document.createElement("li");
-  li.textContent = achievement;
-  achievementsList.appendChild(li);
-});
-
-document.getElementById("about-approach").textContent = data.about.approach;
-
 const skillsContainer = document.getElementById("skills-container");
 data.skills.forEach((skill) => {
   const div = document.createElement("div");
