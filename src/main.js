@@ -1,4 +1,4 @@
-import data from './data.js';
+import { data } from './data.js';
 import { developerExperienceDescriptions } from './developer-experience-descriptions.js';
 
 const experienceWithDescriptions = data.experience.map(job => ({

@@ -182,4 +182,4 @@ const data = {
   }
 };
 
-export default data;
+export { data };
