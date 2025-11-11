@@ -4,6 +4,7 @@ import "./index.css";
 import { Profile } from "./profile";
 import { About } from "./about";
 import { Container } from "./container";
+import { Skills } from "./skills";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")!).render(
     <Container>
       <main>
         <About />
+        <Skills />
       </main>
     </Container>
   </StrictMode>,

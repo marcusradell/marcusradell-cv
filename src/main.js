@@ -6,14 +6,6 @@ const experienceWithDescriptions = data.experience.map((job) => ({
   description: developerExperienceDescriptions[job.id],
 }));
 
-const skillsContainer = document.getElementById("skills-container");
-data.skills.forEach((skill) => {
-  const div = document.createElement("div");
-  div.className = "skill";
-  div.textContent = skill;
-  skillsContainer.appendChild(div);
-});
-
 const experienceList = document.getElementById("experience-list");
 experienceWithDescriptions.forEach((job) => {
   const jobDiv = document.createElement("div");
