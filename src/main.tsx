@@ -8,6 +8,7 @@ import { Skills } from "./skills";
 import { Experience } from "./experience";
 import { Education } from "./education";
 import { Contact } from "./contact";
+import { Copyright } from "./copyright";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -16,14 +17,21 @@ createRoot(document.getElementById("root")!).render(
         <Profile />
       </Container>
     </header>
-    <Container>
-      <main>
+
+    <main>
+      <Container>
         <About />
         <Skills />
         <Experience />
         <Education />
         <Contact />
-      </main>
-    </Container>
+      </Container>
+    </main>
+
+    <footer>
+      <Container>
+        <Copyright />
+      </Container>
+    </footer>
   </StrictMode>,
 );
