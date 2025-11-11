@@ -20,9 +20,9 @@ const skills = [
 
 export function Skills() {
   return (
-    <section id="skills">
+    <section>
       <h2>Skills</h2>
-      <div className="skills-container" id="skills-container">
+      <div className="skills-container">
         {skills.map((skill) => (
           <div key={skill} className="skill">
             {skill}

@@ -13,17 +13,15 @@ const data = {
 
 export function About() {
   return (
-    <section id="about">
+    <section>
       <h2>About</h2>
-      <p id="about-summary">{data.summary}</p>
-      <ul className="achievements" id="achievements-list">
+      <p>{data.summary}</p>
+      <ul className="achievements">
         {data.achievements.map((achievement) => (
           <li key={achievement}>{achievement}</li>
         ))}
       </ul>
-      <p className="approach" id="about-approach">
-        {data.approach}
-      </p>
+      <p className="approach">{data.approach}</p>
     </section>
   );
 }

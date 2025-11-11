@@ -184,9 +184,9 @@ const experienceWithDescriptions = experience.map((job) => ({
 
 export function Experience() {
   return (
-    <section id="experience">
+    <section>
       <h2>Experience</h2>
-      <div id="experience-list">
+      <div>
         {experienceWithDescriptions.map((job) => (
           <div key={job.id} className="job">
             <h3>{job.title}</h3>

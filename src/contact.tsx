@@ -12,9 +12,9 @@ const data = {
 };
 export function Contact() {
   return (
-    <section id="contact">
+    <section>
       <h2>Contact</h2>
-      <div id="contact-info">
+      <div>
         <p>{data.location}</p>
         <p>
           <a href={`mailto:${data.email}`}>{data.email}</a>

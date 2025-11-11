@@ -8,9 +8,9 @@ const education = [
 
 export function Education() {
   return (
-    <section id="education">
+    <section>
       <h2>Education</h2>
-      <div id="education-list">
+      <div>
         {education.map((education) => (
           <div key={education.degree} className="education-item">
             <h3>{education.degree}</h3>
