@@ -6,6 +6,7 @@ import { About } from "./about";
 import { Container } from "./container";
 import { Skills } from "./skills";
 import { Experience } from "./experience";
+import { Education } from "./education";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")!).render(
         <About />
         <Skills />
         <Experience />
+        <Education />
       </main>
     </Container>
   </StrictMode>,

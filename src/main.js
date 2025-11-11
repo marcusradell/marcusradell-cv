@@ -6,28 +6,6 @@ const experienceWithDescriptions = data.experience.map((job) => ({
   description: developerExperienceDescriptions[job.id],
 }));
 
-const educationList = document.getElementById("education-list");
-data.education.forEach((edu) => {
-  const eduDiv = document.createElement("div");
-  eduDiv.className = "education-item";
-
-  const degree = document.createElement("h3");
-  degree.textContent = edu.degree;
-  eduDiv.appendChild(degree);
-
-  const institution = document.createElement("div");
-  institution.className = "institution";
-  institution.textContent = edu.institution;
-  eduDiv.appendChild(institution);
-
-  const period = document.createElement("div");
-  period.className = "period";
-  period.textContent = edu.period;
-  eduDiv.appendChild(period);
-
-  educationList.appendChild(eduDiv);
-});
-
 const contactInfo = document.getElementById("contact-info");
 
 const locationP = document.createElement("p");
