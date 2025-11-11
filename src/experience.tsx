@@ -1,3 +1,124 @@
+const experience = [
+  {
+    id: "head-of-teaching",
+    title: "Head of Teaching",
+    company: "School of Applied Technology </salt>",
+    period: "April 2023 - April 2025 (2 years 1 month)",
+  },
+  {
+    id: "director-of-engineering-wp-tech",
+    title: "Director of Engineering",
+    company: "WP Tech AB",
+    period: "October 2022 - April 2023 (7 months)",
+  },
+  {
+    id: "director-of-engineering-deversify",
+    title: "Director of Engineering",
+    company: "Deversify",
+    period: "October 2021 - April 2023 (1 year 7 months)",
+  },
+  {
+    id: "director-of-engineering-getgeek",
+    title: "Director Of Engineering",
+    company: "GetGeek",
+    period: "July 2021 - September 2021 (3 months)",
+    details: [
+      "Upgraded dependencies, including Node.js from v10 to v14, with careful regression testing",
+      "Added TypeScript to React Native and backend repositories while maintaining legacy code compatibility",
+      "Implemented unit testing for new code with business logic separated from React and Express APIs",
+      "Updated documentation for running and managing services and applications",
+      "Introduced feature flags for internal testing in production",
+      "Implemented reliable time tracking for technicians that worked even during client crashes",
+      "Collaborated with technicians and support to resolve urgent bugs",
+    ],
+  },
+  {
+    id: "director-of-engineering-vembla",
+    title: "Director Of Engineering",
+    company: "Vembla",
+    period: "April 2021 - July 2021 (4 months)",
+    location: "Stockholm, Stockholm County, Sweden",
+  },
+  {
+    id: "fullstack-engineering-manager",
+    title: "Fullstack Engineering Manager",
+    company: "Svea Solar",
+    period: "January 2020 - April 2021 (1 year 4 months)",
+    location: "Stockholm, Stockholm County, Sweden",
+  },
+  {
+    id: "chief-technology-officer",
+    title: "Chief Technology Officer",
+    company: "WeTal",
+    period: "October 2019 - December 2019 (3 months)",
+    location: "Stockholm, Sweden",
+  },
+  {
+    id: "programmer",
+    title: "Programmer",
+    company: "Karma",
+    period: "September 2017 - October 2019 (2 years 2 months)",
+    location: "Stockholm, Sweden",
+  },
+  {
+    id: "frontend-developer",
+    title: "Frontend developer",
+    company: "Linas Matkasse",
+    period: "November 2016 - August 2017 (10 months)",
+    location: "Stockholm, Sweden",
+  },
+  {
+    id: "web-application-developer",
+    title: "Web Application Developer",
+    company: "Omnivy @ Dinbox",
+    period: "June 2016 - November 2016 (6 months)",
+  },
+  {
+    id: "developer-qvalia",
+    title: "Developer",
+    company: "Qvalia",
+    period: "May 2015 - May 2016 (1 year 1 month)",
+  },
+  {
+    id: "it-consultant-utvecklarbolaget",
+    title: "IT Consultant",
+    company: "Utvecklarbolaget",
+    period: "August 2014 - May 2015 (10 months)",
+    location: "Östersund/Stockholm",
+  },
+  {
+    id: "it-consultant-r2m",
+    title: "IT Consultant",
+    company: "R2M",
+    period: "August 2013 - June 2014 (11 months)",
+    location: "Kista",
+  },
+  {
+    id: "it-consultant-dq-consulting",
+    title: "IT Consultant",
+    company: "DQ Consulting AB",
+    period: "March 2011 - August 2013 (2 years 6 months)",
+  },
+  {
+    id: "it-consultant-iptor",
+    title: "IT Consultant",
+    company: "IPTOR",
+    period: "2010 - 2011 (1 year)",
+  },
+  {
+    id: "it-consultant-cag-malardalen",
+    title: "IT Consultant",
+    company: "CAG Mälardalen",
+    period: "2008 - 2008 (less than a year)",
+  },
+  {
+    id: "company-host",
+    title: "Company Host",
+    company: "Mälardalen University",
+    period: "2004 - 2005 (1 year)",
+  },
+] as const;
+
 const developerExperienceDescriptions = {
   "head-of-teaching": [
     "Led and developed a team of instructors delivering fullstack web development education in JavaScript/TypeScript, C#, and Java, simultaneously increasing program quality while optimizing team structure for improved profitability.",
@@ -54,6 +175,40 @@ const developerExperienceDescriptions = {
   "it-consultant-iptor": ["Web development."],
   "it-consultant-cag-malardalen": ["Web development."],
   "company-host": [],
-};
+} as const;
 
-export { developerExperienceDescriptions };
+const experienceWithDescriptions = experience.map((job) => ({
+  ...job,
+  description: developerExperienceDescriptions[job.id],
+}));
+
+export function Experience() {
+  return (
+    <section id="experience">
+      <h2>Experience</h2>
+      <div id="experience-list">
+        {experienceWithDescriptions.map((job) => (
+          <div key={job.id} className="job">
+            <h3>{job.title}</h3>
+
+            <div className="company">{job.company}</div>
+
+            <div className="period">{job.period}</div>
+
+            <div className="company-location">{(job as any).location}</div>
+
+            {job.description.map((description) => (
+              <p key={description}>{description}</p>
+            ))}
+
+            <ul className="job-details">
+              {(job as any).details?.map((detail: string) => (
+                <li key={detail}>{detail}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
