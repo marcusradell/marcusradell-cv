@@ -6,13 +6,6 @@ const experienceWithDescriptions = data.experience.map((job) => ({
   description: developerExperienceDescriptions[job.id],
 }));
 
-const expertiseList = document.getElementById("expertise-list");
-data.profile.expertise.forEach((item) => {
-  const li = document.createElement("li");
-  li.textContent = item;
-  expertiseList.appendChild(li);
-});
-
 document.getElementById("about-summary").textContent = data.about.summary;
 
 const achievementsList = document.getElementById("achievements-list");
