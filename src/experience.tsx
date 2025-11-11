@@ -22,15 +22,6 @@ const experience = [
     title: "Director Of Engineering",
     company: "GetGeek",
     period: "July 2021 - September 2021 (3 months)",
-    details: [
-      "Upgraded dependencies, including Node.js from v10 to v14, with careful regression testing",
-      "Added TypeScript to React Native and backend repositories while maintaining legacy code compatibility",
-      "Implemented unit testing for new code with business logic separated from React and Express APIs",
-      "Updated documentation for running and managing services and applications",
-      "Introduced feature flags for internal testing in production",
-      "Implemented reliable time tracking for technicians that worked even during client crashes",
-      "Collaborated with technicians and support to resolve urgent bugs",
-    ],
   },
   {
     id: "director-of-engineering-vembla",
@@ -144,6 +135,13 @@ const developerExperienceDescriptions = {
   "director-of-engineering-getgeek": [
     "Worked independently to plan and execute responsive development, sharing detailed daily logs with the CEO.",
     "Made GetGeek's code and infrastructure future-proof and scalable through systematic improvements:",
+    "Upgraded dependencies, including Node.js from v10 to v14, with careful regression testing",
+    "Added TypeScript to React Native and backend repositories while maintaining legacy code compatibility",
+    "Implemented unit testing for new code with business logic separated from React and Express APIs",
+    "Updated documentation for running and managing services and applications",
+    "Introduced feature flags for internal testing in production",
+    "Implemented reliable time tracking for technicians that worked even during client crashes",
+    "Collaborated with technicians and support to resolve urgent bugs",
   ],
   "director-of-engineering-vembla": [
     "Worked closely with the CTO to ensure that our platform kept up and running while replacing the first-generation of outsourced code to be converted to high quality code.",
@@ -197,13 +195,9 @@ export function Experience() {
 
             <div className="company-location">{(job as any).location}</div>
 
-            {job.descriptions.map((description) => (
-              <p key={description}>{description}</p>
-            ))}
-
             <ul className="job-details">
-              {(job as any).details?.map((detail: string) => (
-                <li key={detail}>{detail}</li>
+              {job.descriptions.map((description) => (
+                <li key={description}>{description}</li>
               ))}
             </ul>
           </div>
