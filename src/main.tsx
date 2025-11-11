@@ -1,14 +1,16 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { Profile } from "./profile";
-import { About } from "./about";
-import { Container } from "./container";
-import { Skills } from "./skills";
-import { Experience } from "./experience";
-import { Education } from "./education";
-import { Contact } from "./contact";
-import { Copyright } from "./copyright";
+import {
+  About,
+  Contact,
+  Container,
+  Copyright,
+  Education,
+  Experience,
+  Profile,
+  Skills,
+} from "./components";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
