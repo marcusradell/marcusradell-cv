@@ -7,21 +7,19 @@ const expertiseList = [
 
 export function Profile() {
   return (
-    <header>
-      <div className="container">
-        <div className="profile-header">
-          <div className="profile-info">
-            <h1 id="profile-name">Marcus Rådell</h1>
-            <div>
-              <ul className="expertise-list" id="expertise-list">
-                {expertiseList.map((expertise) => (
-                  <li key={expertise}>{expertise}</li>
-                ))}
-              </ul>
-            </div>
+    <div className="container">
+      <div className="profile-header">
+        <div className="profile-info">
+          <h1 id="profile-name">Marcus Rådell</h1>
+          <div>
+            <ul className="expertise-list" id="expertise-list">
+              {expertiseList.map((expertise) => (
+                <li key={expertise}>{expertise}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
