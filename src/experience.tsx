@@ -179,7 +179,7 @@ const developerExperienceDescriptions = {
 
 const experienceWithDescriptions = experience.map((job) => ({
   ...job,
-  description: developerExperienceDescriptions[job.id],
+  descriptions: developerExperienceDescriptions[job.id],
 }));
 
 export function Experience() {
@@ -197,7 +197,7 @@ export function Experience() {
 
             <div className="company-location">{(job as any).location}</div>
 
-            {job.description.map((description) => (
+            {job.descriptions.map((description) => (
               <p key={description}>{description}</p>
             ))}
 
